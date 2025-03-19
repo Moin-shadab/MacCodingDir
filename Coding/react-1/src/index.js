@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ChildComponent from './components/ChildComponent.js';
+import ChildComponent from './components/ChildComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    {/* <ChildComponent/> */}
     <ChildComponent/>
+    
   </React.StrictMode>
 );
 
