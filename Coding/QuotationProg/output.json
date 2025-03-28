@@ -1,0 +1,20 @@
+{
+    "clientName": "asldj",
+    "clientAddress": "jj",
+    "clientGst": "pojp",
+    "clientPhone": "hoh",
+    "items": [
+        {
+            "name": "ohih",
+            "qty": 1,
+            "gst": 18,
+            "price": 89
+        },
+        {
+            "name": "jj",
+            "qty": 1,
+            "gst": 18,
+            "price": 889
+        }
+    ]
+}
