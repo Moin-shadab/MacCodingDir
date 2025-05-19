@@ -15,7 +15,7 @@
     <button type="submit">Submit</button>
 </form>
 
-<h2>Posts List</h2>
+<h2>Posts Listt</h2>
 <table border="1" id="postTable">
     <thead>
         <tr>
@@ -56,7 +56,8 @@ $('#postForm').submit(function(e) {
     let id = $('#post_id').val();
     let method = id ? 'PUT' : 'POST';
     let url = id ? `/posts/${id}` : '/posts';
-    
+    // alert(id);
+    // return ;
     $.ajax({
         url: url,
         type: method,
