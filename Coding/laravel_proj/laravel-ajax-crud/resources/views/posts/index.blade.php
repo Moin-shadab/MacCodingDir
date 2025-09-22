@@ -154,7 +154,7 @@ function deletePost(id) {
             border-radius: 8px;
             padding: 0 16px;
             max-width: 720px;
-            height: 48px;
+            height: 49px;
         }
 
         .search-bar input {
