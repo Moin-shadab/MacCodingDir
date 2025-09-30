@@ -13,6 +13,7 @@
     <input type="text" id="title" placeholder="Title"><br>
     <textarea id="body" placeholder="Body"></textarea><br>
     <button type="submit">Submit</button>
+    
 </form>
 
 <h2>Posts Listt</h2>
