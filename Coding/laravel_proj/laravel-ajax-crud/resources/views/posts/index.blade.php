@@ -12,6 +12,7 @@
     <input type="hidden" id="post_id">
     <input type="text" id="title" placeholder="Title"><br>
     <textarea id="body" placeholder="Body"></textarea><br>
+    
     <button type="submit">Submit</button>
     
 </form>
