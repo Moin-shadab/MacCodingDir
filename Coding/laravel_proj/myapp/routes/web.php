@@ -10,6 +10,7 @@ Route::get('/', function (Illuminate\Http\Request $request) {
     $viewPath = "modules.{$moduleName}.{$pageName}";
     if (view()->exists($viewPath)) {
         return view($viewPath);
+        
     }
     return redirect('/?module=dashboard&page=home')->with('error', 'Page not found.');
 })->middleware('auth');
