@@ -12,6 +12,7 @@ Route::get('/', function (Illuminate\Http\Request $request) {
         return view($viewPath);
         
     }
+    
     return redirect('/?module=dashboard&page=home')->with('error', 'Page not found.');
 })->middleware('auth');
 
