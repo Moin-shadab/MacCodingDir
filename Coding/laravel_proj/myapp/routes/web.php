@@ -16,7 +16,6 @@ Route::get('/', function (Illuminate\Http\Request $request) {
     return redirect('/?module=dashboard&page=home')->with('error', 'Page not found.');
 })->middleware('auth');
 
-
 Auth::routes(['register' => false]);
 
 Route::prefix('admin')->group(function () {
