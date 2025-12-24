@@ -17,7 +17,6 @@ Route::get('/', function (Illuminate\Http\Request $request) {
 })->middleware('auth');
 
 Auth::routes(['register' => false]);
-
 Route::prefix('admin')->group(function () {
     
     Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
