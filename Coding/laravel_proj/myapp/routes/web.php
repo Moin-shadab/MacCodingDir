@@ -17,6 +17,7 @@ Route::get('/', function (Illuminate\Http\Request $request) {
 })->middleware('auth');
 
 Auth::routes(['register' => false]);
+
 Route::prefix('admin')->group(function () {
     
     Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
@@ -31,5 +32,6 @@ Route::prefix('admin')->group(function () {
     Route::get('/permissions/{userId}', [AdminController::class, 'permissions'])->name('admin.permissions');
     Route::post('/permissions/{userId}', [AdminController::class, 'assignPermission'])->name('admin.assignPermission');
 });
+
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
