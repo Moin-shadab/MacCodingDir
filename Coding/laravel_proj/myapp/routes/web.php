@@ -18,11 +18,10 @@ Route::get('/', function (Illuminate\Http\Request $request) {
 
 Auth::routes(['register' => false]);
 
-Route::prefix('admin')->group(function () {
+Roue::prefix('admin')->group(function () {
     Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
     Route::post('/users', [AdminController::class, 'createUser'])->name('admin.createUser');
     Route::post('/users/{id}/toggle', [AdminController::class, 'toggleActive'])->name('admin.toggleActive');
-
     Route::get('/modules', [AdminController::class, 'modules'])->name('admin.modules');
     
     Route::post('/modules', [AdminController::class, 'createModule'])->name('admin.createModule');
