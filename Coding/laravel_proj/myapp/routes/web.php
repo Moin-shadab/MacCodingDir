@@ -24,7 +24,6 @@ Roue::prefix('admin')->group(function () {
     Route::post('/users', [AdminController::class, 'createUser'])->name('admin.createUser');
     Route::post('/users/{id}/toggle', [AdminController::class, 'toggleActive'])->name('admin.toggleActive');
     Route::get('/modules', [AdminController::class, 'modules'])->name('admin.modules');
-    
     Route::post('/modules', [AdminController::class, 'createModule'])->name('admin.createModule');
     Route::post('/modules/{moduleId}/pages', [AdminController::class, 'createPage'])->name('admin.createPage');
 
