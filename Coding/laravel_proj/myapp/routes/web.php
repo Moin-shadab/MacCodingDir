@@ -26,7 +26,6 @@ Roue::prefix('admin')->group(function () {
     Route::get('/modules', [AdminController::class, 'modules'])->name('admin.modules');
     Route::post('/modules', [AdminController::class, 'createModule'])->name('admin.createModule');
     Route::post('/modules/{moduleId}/pages', [AdminController::class, 'createPage'])->name('admin.createPage');
-
     Route::get('/permissions/{userId}', [AdminController::class, 'permissions'])->name('admin.permissions');
     Route::post('/permissions/{userId}', [AdminController::class, 'assignPermission'])->name('admin.assignPermission');
 });
