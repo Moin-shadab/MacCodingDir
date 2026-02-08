@@ -14,6 +14,7 @@ Route::get('/', function (Illuminate\Http\Request $request) {
 })->middleware('auth');
 
 Auth::routes(['register' => false]);
+
 Roue::prefix('admin')->group(function () {
     Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
     Route::post('/users', [AdminController::class, 'createUser'])->name('admin.createUser');
